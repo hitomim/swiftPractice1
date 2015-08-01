@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tab3 = thirdViewController()
         
         let navigationController = UINavigationController(rootViewController: tab1)
-        //navigationController.setNavigationBarHidden(true, animated:true)
+        navigationController.setNavigationBarHidden(true, animated:true)
         
         let tabBarController = UITabBarController()
         tabBarController.setViewControllers(
