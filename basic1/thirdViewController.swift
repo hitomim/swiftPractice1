@@ -13,7 +13,7 @@ class thirdViewController: UIViewController {
     override init() {
         super.init(nibName: nil, bundle: nil)
         self.title = "3rd"
-        self.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Featured, tag: 3)
+        self.tabBarItem.title = "3rd"
     }
     
     required init(coder aDecoder: NSCoder) {
@@ -39,13 +39,6 @@ class thirdViewController: UIViewController {
         
     }
     
-    func onClickNextButton(sender: UIButton){
-        let myFirstViewController: UIViewController = firstViewController()
-        // animation
-        myFirstViewController.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
-        self.presentViewController(myFirstViewController, animated: true, completion: nil)
-    }
-
     override func didReceiveMemoryWarning() {
         // Dispose of any resources that can be recreated.
         super.didReceiveMemoryWarning()

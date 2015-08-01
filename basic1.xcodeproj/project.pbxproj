@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B655EEBF1B6CC1DC000FB41B /* nextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B655EEBE1B6CC1DC000FB41B /* nextViewController.swift */; };
 		B6A191DB1B5F6D6D0030201E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A191DA1B5F6D6D0030201E /* AppDelegate.swift */; };
 		B6A191DD1B5F6D6D0030201E /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A191DC1B5F6D6D0030201E /* thirdViewController.swift */; };
 		B6A191E21B5F6D6D0030201E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A191E11B5F6D6D0030201E /* Images.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B655EEBE1B6CC1DC000FB41B /* nextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = nextViewController.swift; sourceTree = "<group>"; };
 		B6A191D51B5F6D6D0030201E /* basic1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = basic1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A191D91B5F6D6D0030201E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6A191DA1B5F6D6D0030201E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,9 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				B6A191DA1B5F6D6D0030201E /* AppDelegate.swift */,
-				B6A191DC1B5F6D6D0030201E /* thirdViewController.swift */,
-				B6A191FC1B5F79B50030201E /* secondViewController.swift */,
+				B655EEBE1B6CC1DC000FB41B /* nextViewController.swift */,
 				B6A191FA1B5F76D90030201E /* firstViewController.swift */,
+				B6A191FC1B5F79B50030201E /* secondViewController.swift */,
+				B6A191DC1B5F6D6D0030201E /* thirdViewController.swift */,
 				B6A191E11B5F6D6D0030201E /* Images.xcassets */,
 				B6A191E31B5F6D6D0030201E /* LaunchScreen.xib */,
 				B6A191D81B5F6D6D0030201E /* Supporting Files */,
@@ -217,6 +220,7 @@
 				B6A191FD1B5F79B50030201E /* secondViewController.swift in Sources */,
 				B6A191DD1B5F6D6D0030201E /* thirdViewController.swift in Sources */,
 				B6A191DB1B5F6D6D0030201E /* AppDelegate.swift in Sources */,
+				B655EEBF1B6CC1DC000FB41B /* nextViewController.swift in Sources */,
 				B6A191FB1B5F76D90030201E /* firstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,7 +13,7 @@ class firstViewController: UIViewController {
     override init() {
         super.init(nibName: nil, bundle: nil)
         self.title = "TOP"
-        self.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Featured, tag: 1)
+        self.tabBarItem.title = "TOP"
     }
     
     required init(coder aDecoder: NSCoder) {
@@ -36,14 +36,21 @@ class firstViewController: UIViewController {
         nameLabel.textAlignment = NSTextAlignment.Center
         nameLabel.layer.position = CGPoint(x: self.view.bounds.width/2,y: 300)
         self.view.addSubview(nameLabel);
- 
-    }
+
     
-    func onClickNextButton(sender: UIButton){
-        let mySecondViewController: UIViewController = secondViewController()
-        // animation
-        mySecondViewController.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
-        self.presentViewController(mySecondViewController, animated: true, completion: nil)
+        let nextButton: UIButton = UIButton(frame: CGRectMake(0,0,120,50))
+        nextButton.backgroundColor = UIColor.redColor();
+        nextButton.layer.masksToBounds = true
+        nextButton.setTitle("Next", forState: .Normal)
+        nextButton.layer.cornerRadius = 20.0
+        nextButton.layer.position = CGPoint(x: self.view.bounds.width/2 , y:self.view.bounds.height-100)
+        nextButton.addTarget(self, action: "nextPage:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(nextButton);
+
+    }
+
+    func nextPage(sender: UIButton){
+        self.navigationController?.pushViewController(secondViewController(), animated: true)
     }
 
     override func didReceiveMemoryWarning() {

@@ -18,16 +18,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        // let navigationControler = UINavigationController(rootViewController: firstViewController())
-        // self.window?.rootViewController = navigationControler
-        // self.window?.makeKeyAndVisible()
+        let tab1 = firstViewController()
+        let tab2 = secondViewController()
+        let tab3 = thirdViewController()
+        
+        let navigationController = UINavigationController(rootViewController: tab1)
+        //navigationController.setNavigationBarHidden(true, animated:true)
         
         let tabBarController = UITabBarController()
         tabBarController.setViewControllers(
             [
-                firstViewController(),
-                secondViewController(),
-                thirdViewController()
+                navigationController,
+                tab2,
+                tab3
             ], animated: true)
         
         self.window?.rootViewController = tabBarController

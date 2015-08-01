@@ -13,7 +13,7 @@ class secondViewController: UIViewController {
     override init() {
         super.init(nibName: nil, bundle: nil)
         self.title = "2nd"
-        self.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Featured, tag: 2)
+        self.tabBarItem.title = "2nd"
     }
     
     required init(coder aDecoder: NSCoder) {
