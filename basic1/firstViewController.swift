@@ -10,7 +10,7 @@ import UIKit
 
 class firstViewController: UIViewController {
 
-    override init() {
+    init() {
         super.init(nibName: nil, bundle: nil)
         self.title = "TOP"
         self.tabBarItem.title = "TOP"
@@ -42,7 +42,7 @@ class firstViewController: UIViewController {
         navigation.addSubview(navigationImage)
         
         // +Navi back btn
-        let backButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
+        let backButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
         backButton.setImage(UIImage(named: "back.png"), forState: UIControlState.Normal)
         backButton.frame = CGRectMake(CGRectGetMaxX(self.view.frame)-70, 30, 65, 45)
         backButton.addTarget(self, action: "backPage:", forControlEvents: UIControlEvents.TouchUpInside)

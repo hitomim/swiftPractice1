@@ -10,7 +10,7 @@ import UIKit
 
 class secondViewController: UIViewController {
 
-    override init() {
+    init() {
         super.init(nibName: nil, bundle: nil)
         self.title = "2nd"
         self.tabBarItem.title = "2nd"
