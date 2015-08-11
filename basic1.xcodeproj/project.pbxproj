@@ -16,6 +16,7 @@
 		B6A191F11B5F6D6D0030201E /* basic1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A191F01B5F6D6D0030201E /* basic1Tests.swift */; };
 		B6A191FB1B5F76D90030201E /* firstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A191FA1B5F76D90030201E /* firstViewController.swift */; };
 		B6A191FD1B5F79B50030201E /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A191FC1B5F79B50030201E /* secondViewController.swift */; };
+		B6A7E5F21B7857480036CD3D /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A7E5F11B7857480036CD3D /* CustomNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		B6A191F01B5F6D6D0030201E /* basic1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basic1Tests.swift; sourceTree = "<group>"; };
 		B6A191FA1B5F76D90030201E /* firstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = "<group>"; };
 		B6A191FC1B5F79B50030201E /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		B6A7E5F11B7857480036CD3D /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				B6A191DA1B5F6D6D0030201E /* AppDelegate.swift */,
+				B6A7E5F11B7857480036CD3D /* CustomNavigationController.swift */,
 				B6A191FA1B5F76D90030201E /* firstViewController.swift */,
 				B6A191FC1B5F79B50030201E /* secondViewController.swift */,
 				B6A191DC1B5F6D6D0030201E /* thirdViewController.swift */,
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6A191FD1B5F79B50030201E /* secondViewController.swift in Sources */,
+				B6A7E5F21B7857480036CD3D /* CustomNavigationController.swift in Sources */,
 				B6A191DD1B5F6D6D0030201E /* thirdViewController.swift in Sources */,
 				B6A191DB1B5F6D6D0030201E /* AppDelegate.swift in Sources */,
 				B6A191FB1B5F76D90030201E /* firstViewController.swift in Sources */,

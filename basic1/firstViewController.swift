@@ -9,12 +9,6 @@
 import UIKit
 
 class firstViewController: UIViewController {
-
-    init() {
-        super.init(nibName: nil, bundle: nil)
-        self.title = "TOP"
-        self.tabBarItem.title = "TOP"
-    }
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -22,35 +16,14 @@ class firstViewController: UIViewController {
     
     required override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        self.title = "TOP"
+        self.tabBarItem.title = "TOP"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor.whiteColor()
-
-        //---
-        // NavigationBar
-        //
-        let navigation = UIView(frame: CGRectMake(0, 0, 400, 100))
-        navigation.backgroundColor = UIColor.grayColor()
-        
-        // +Navi image
-        let navigationImage = UIImageView(frame: CGRectMake(0,0,400,100))
-        navigationImage.image = UIImage(named: "navi.png")
-        navigationImage.layer.position = CGPoint(x: 200, y: 50)
-        navigation.addSubview(navigationImage)
-        
-        // +Navi back btn
-        let backButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
-        backButton.setImage(UIImage(named: "back.png"), forState: UIControlState.Normal)
-        backButton.frame = CGRectMake(CGRectGetMaxX(self.view.frame)-70, 30, 65, 45)
-        backButton.addTarget(self, action: "backPage:", forControlEvents: UIControlEvents.TouchUpInside)
-        navigation.addSubview(backButton)
-        
-        // +Navi set
-        self.navigationController?.view.addSubview(navigation)
-
 
         let nameLabel: UILabel = UILabel(frame: CGRectMake(0,0,200,50))
         nameLabel.shadowColor = UIColor.grayColor()
@@ -73,9 +46,14 @@ class firstViewController: UIViewController {
     func nextPage(sender: UIButton){
         self.navigationController?.pushViewController(secondViewController(), animated: true)
     }
-
-    func backPage(sender: UIButton) {
-        self.navigationController?.popViewControllerAnimated(true)
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        // 画面の表示の直前に呼ばれる
+        
+        let btn = CustomNavigationController().returnBtn
+        btn?.hidden
     }
     
     override func didReceiveMemoryWarning() {

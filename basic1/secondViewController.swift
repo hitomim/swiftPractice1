@@ -9,12 +9,6 @@
 import UIKit
 
 class secondViewController: UIViewController {
-
-    init() {
-        super.init(nibName: nil, bundle: nil)
-        self.title = "2nd"
-        self.tabBarItem.title = "2nd"
-    }
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -22,8 +16,10 @@ class secondViewController: UIViewController {
     
     required override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        self.title = "2nd"
+        self.tabBarItem.title = "2nd"
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

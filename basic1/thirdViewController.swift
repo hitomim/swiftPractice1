@@ -9,12 +9,6 @@
 import UIKit
 
 class thirdViewController: UIViewController {
-
-    init() {
-        super.init(nibName: nil, bundle: nil)
-        self.title = "3rd"
-        self.tabBarItem.title = "3rd"
-    }
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -22,6 +16,8 @@ class thirdViewController: UIViewController {
     
     required override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        self.title = "3rd"
+        self.tabBarItem.title = "3rd"
     }
 
     override func viewDidLoad() {
